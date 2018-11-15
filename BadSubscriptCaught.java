@@ -6,6 +6,11 @@ public class BadSubscriptCaught{
 		String[] fNames = { "Robert", "Jaime", "James", "Heather", "Michael", "Chris", "Stewart", "Joey" };
 		Scanner inputDevice = new Scanner(System.in);
 		
+		System.out.println("List of names in the array:");
+		for(int i = 0; i < fNames.length; i++){
+			System.out.println((i + 1) + ") " + fNames[i]);
+		}
+		
 		System.out.print("enter 1 to 8 to display a first name: ");
 		try{
 			choice = inputDevice.nextInt();
