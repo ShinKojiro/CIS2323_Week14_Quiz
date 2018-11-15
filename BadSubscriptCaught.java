@@ -11,7 +11,7 @@ public class BadSubscriptCaught{
 			System.out.println((i + 1) + ") " + fNames[i]);
 		}
 		
-		System.out.print("enter 1 to 8 to display a first name: ");
+		System.out.print("enter 1 to 8 to display a name: ");
 		try{
 			choice = inputDevice.nextInt();
 			System.out.println(fNames[choice - 1]);
