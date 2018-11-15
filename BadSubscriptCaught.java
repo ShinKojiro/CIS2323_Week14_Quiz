@@ -11,13 +11,16 @@ public class BadSubscriptCaught{
 			System.out.println((i + 1) + ") " + fNames[i]);
 		}
 		
-		System.out.print("enter 1 to 8 to display a name: ");
+		System.out.print("\nEnter 1 to 8 to display a name: ");
 		try{
 			choice = inputDevice.nextInt();
 			System.out.println(fNames[choice - 1]);
 		}
 		catch(ArrayIndexOutOfBoundsException e){
-			System.out.println("Entered improper value");
+			System.out.println("Entered improper value.");
+		}
+		catch(InputMismatchException e){
+			System.out.println("That is not a number.");
 		}
 	}
 }
